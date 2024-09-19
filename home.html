@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+
+    <main class="flex justify-center">
+        <div class="stats shadow">
+            <div class="mockup-phone">
+                <div class="camera"></div>
+                <div class="display">
+                  <div class="artboard artboard-demo phone-3">
+                    <div class="stats shadow">
+                        <div class="stat">
+                          <div id="Available" class="stat-value">20</div>
+                          <div class="stat-desc">Available Balanced</div>
+                        </div>
+                      </div>
+                      <div class="divider"></div>
+
+                      <div>
+                        <button id="addMoney" class="btn btn-lg">Add Money</button>
+                        <button id="cashOut" class="btn btn-lg">Cash Out</button>
+                        <button id="transection" class="btn btn-lg">Transection</button>
+                      </div>
+                      <div class="divider"></div>
+
+                    <div class="">
+                        <div id="add_i" class=" hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                            <form class="card-body">
+                              <div class="form-control">
+                                <label class="label">
+                                  <span class="label-text">Amount</span>
+                                </label>
+                                <input id="text-add" type="text" placeholder="Amount" class="input input-bordered" required />
+                              </div>
+                              <div class="form-control">
+                                <label class="label">
+                                  <span class="label-text">Pin</span>
+                                </label>
+                                <input id="pin-add" type="password" placeholder="Pin" class="input input-bordered"autocomplete="off" required />
+                        
+                              </div>
+                              <div class="form-control mt-6">
+                                <button id="btn-add-money" class="btn btn-primary">Add Money</button>
+                              </div>
+                            </form>
+                          </div>
+    
+                          <div id="cash_i" class=" hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                            <form class="card-body">
+                              <div class="form-control">
+                                <label class="label">
+                                  <span class="label-text">Amount</span>
+                                </label>
+                                <input id="text-del" type="text" placeholder="Amount" class="input input-bordered" required />
+                              </div>
+                              <div class="form-control">
+                                <label class="label">
+                                  <span class="label-text">Pin</span>
+                                </label>
+                                <input id="pin-del" type="password" placeholder="Pin" class="input input-bordered"autocomplete="off" required />
+                        
+                              </div>
+                              <div class="form-control mt-6">
+                                <button id="btn-del-money" class="btn btn-primary">Cash out</button>
+                              </div>
+                            </form>
+                          </div>
+
+                          <div id="tran_i" class="hidden">
+
+                            <h1 class="text-5xl">
+                                Transection History
+                            </h1>
+
+                            <div id="transection-his" class="text-center mt-6">
+
+                            </div>
+                          </div>
+                    </div>
+
+                      
+
+
+                  </div>
+                </div>
+              </div>
+           
+          </div>
+    </main>
+     <script src="/js/function.js"></script>
+    <script src="/js/addMoney.js"></script>
+    <script src="/js/cashout.js"></script>
+    <script src="/feature.js"></script>
+</body>
+</html>
