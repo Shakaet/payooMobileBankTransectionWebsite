@@ -49,6 +49,7 @@ document.getElementById("btn-add-money").addEventListener("click",function(event
         // create p for transection
 
         let p=document.createElement("p")
+        p.classList.add("bg-yellow-300")
         p.innerText =` Added : ${input_text} , New Balanced = ${add} `
         console.log(p)
 

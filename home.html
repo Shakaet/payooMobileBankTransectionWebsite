@@ -24,10 +24,11 @@
                       </div>
                       <div class="divider"></div>
 
-                      <div>
-                        <button id="addMoney" class="btn btn-lg">Add Money</button>
-                        <button id="cashOut" class="btn btn-lg">Cash Out</button>
-                        <button id="transection" class="btn btn-lg">Transection</button>
+                      <div class="">
+                        <button id="addMoney" class="btn btn-lg m-2">Add Money</button>
+                        <button id="cashOut" class="btn btn-lg m-2">Cash Out</button>
+                        <button id="transfer" class="btn btn-lg m-2">Transfer</button>
+                        <button id="transection" class="btn btn-lg m-2">Transection</button>
                       </div>
                       <div class="divider"></div>
 
@@ -74,6 +75,29 @@
                             </form>
                           </div>
 
+                          <div id="transfer_i" class=" hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                            <form class="card-body">
+                              <div class="form-control">
+                                <label class="label">
+                                  <span class="label-text">Amount</span>
+                                </label>
+                                <input id="text-transfer" type="text" placeholder="Amount" class="input input-bordered" required />
+                              </div>
+                              <div class="form-control">
+                                <label class="label">
+                                  <span class="label-text">Pin</span>
+                                </label>
+                                <input id="pin-transfer" type="password" placeholder="Pin" class="input input-bordered"autocomplete="off" required />
+                        
+                              </div>
+                              <div class="form-control mt-6">
+                                <button id="btn-transfer-money" class="btn btn-primary">Transfer Money</button>
+                              </div>
+                            </form>
+                          </div>
+
+                          
+
                           <div id="tran_i" class="hidden">
 
                             <h1 class="text-5xl">
@@ -99,5 +123,6 @@
     <script src="/js/addMoney.js"></script>
     <script src="/js/cashout.js"></script>
     <script src="/feature.js"></script>
+    <script src="js/transfer.js"></script>
 </body>
 </html>

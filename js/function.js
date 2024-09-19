@@ -22,6 +22,7 @@ function show(id){
   // all hides
     document.getElementById("add_i").classList.add("hidden")
     document.getElementById("cash_i").classList.add("hidden")
+    document.getElementById("transfer_i").classList.add("hidden")
     document.getElementById("tran_i").classList.add("hidden")
     // open which i call
     document.getElementById(id).classList.remove("hidden")
